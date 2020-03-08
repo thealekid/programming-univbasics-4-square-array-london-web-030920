@@ -1,8 +1,15 @@
-def square_array(numbers)
-  numbers = [1,2,3]
-  new_numbers = []
-  numbers.each do |num|
-    new_numbers << (num ** 2)
- end
- return new_numbers
+def square_array(array)
+  new_array = []
+  counter = 0
+  
+  while array[counter] do
+    new_array << array[counter] ** 2 
+  end
+ 
+ return new_array
+
 end 
+
+numbers = [2, 4, 6]
+
+square_array(numbers)
